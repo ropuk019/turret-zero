@@ -89,12 +89,12 @@ SCL    ----------- SCL (GPIO 3 / pin 5)
    # Interface Options → Camera → Enable
    # Interface Options → I2C → Enable
    # Reboot
-```
-
+``
 2. Clone the repository:
    ```
 https://github.com/ropuk019/turret-zero.git
    cd turret-zero
+  
    ```
 3. Run the installer:
    ```bash
