@@ -1,0 +1,8 @@
+opencv-python
+numpy
+ultralytics
+pyyaml
+requests
+smbus2
+RPi.GPIO
+python-telegram-bot
