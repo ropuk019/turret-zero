@@ -1,4 +1,3 @@
-```markdown
 # Turret Zero
 
 A simple air defence spotting system anyone can build for under $150.
