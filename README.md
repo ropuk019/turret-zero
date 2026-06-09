@@ -84,7 +84,7 @@ SCL    ----------- SCL (GPIO 3 / pin 5)
 
 ## Installation
 1. Enable camera & I2C interfaces:
-   ```bash
+  
    sudo raspi-config
    # Interface Options → Camera → Enable
    # Interface Options → I2C → Enable
@@ -92,7 +92,7 @@ SCL    ----------- SCL (GPIO 3 / pin 5)
 ```
 
 2. Clone the repository:
-   ```bash
+   ```
 https://github.com/ropuk019/turret-zero.git
    cd turret-zero
    ```
@@ -157,5 +157,3 @@ Servo jittering Common ground missing or insufficient power
 License
 
 MIT
-
-```
