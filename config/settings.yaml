@@ -1,0 +1,42 @@
+# Turret Zero Configuration
+
+system:
+  simulation_mode: true  # Set to false when running on actual hardware
+  alert_cooldown: 60     # Seconds between alerts for the same object
+  log_detections: true
+
+camera:
+  device_index: 0
+  resolution: [640, 480]
+  fps: 30
+  vertical_tilt: 20      # Degrees upward
+
+motor:
+  gpio_pin: 18
+  speed_dps: 15          # Degrees per second
+  continuous: true
+
+gps:
+  port: "/dev/ttyS0"
+  baudrate: 9600
+  default_lat: 40.7128   # Used if GPS signal is lost
+  default_lon: -74.0060
+  default_alt: 10.0
+
+gyro:
+  i2c_bus: 1
+  address: 0x68
+
+detection:
+  model_path: "yolov8n.pt"
+  confidence_threshold: 0.5
+  classes: [4]           # YOLOv8 class 4 is 'airplane'
+
+telegram:
+  bot_token: "YOUR_BOT_TOKEN_HERE"
+  chat_id: "YOUR_CHAT_ID_HERE"
+  enabled: false         # Set to true once token/id are configured
+
+paths:
+  photos_dir: "data/photos"
+  logs_dir: "data/logs"
